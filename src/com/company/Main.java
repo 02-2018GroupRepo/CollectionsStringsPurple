@@ -2,6 +2,7 @@ package com.company;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.HashMap;
 
 public class Main {
 
@@ -31,6 +32,22 @@ public class Main {
         }
 
         //Exercise 4 - HashMap
+
+        HashMapClass phoneBook1 = new HashMapClass();
+        phoneBook1.addEntry("Alice", "703-493-1834");
+        phoneBook1.addEntry("Bob", "857-384-1234");
+        phoneBook1.addEntry("Elizabeth", "484-584-2923");
+
+        phoneBook1.printEntry("Elizabeth");
+        phoneBook1.addEntry("Kareem", "938-489-1234");
+        phoneBook1.removeEntry("Alice");
+        phoneBook1.changeEntry("Bob", "968-345-2345");
+
+        phoneBook1.printPhoneBook();
+
+
+
+
 
     }
 }
